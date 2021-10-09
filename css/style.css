@@ -1,0 +1,351 @@
+/* колір основного тексту #212121; */
+/* вторинний колір тексту #757575 */
+/* акцент #2196F3 */
+/* білий #FFFFFF */
+/* колір героя і футера #2F303A */
+/* вторинний колір фону #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --bg-color-hero-foot: #2f303a;
+  --bg-btn-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+/*-----------Logo---------- */
+
+.logo {
+  color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-primary {
+  color: #000000;
+}
+
+.logo-secondary {
+  color: var(--primary-white-color);
+}
+
+/* ----------Header---------- */
+
+.site-nav {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* -------Контакти------- */
+
+.contacts {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
+.contact {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+
+.hero {
+  background-color: var(--bg-color-hero-foot);
+}
+
+.hero-title {
+  margin-top: 0%;
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  border-radius: 4px;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+/* -------Section------- */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Особливості */
+
+.features-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.features-title {
+  margin-top: 0%;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-title {
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  margin: 0%;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+/* Зайнятість */
+
+.work-list {
+  margin: 0%;
+  list-style: none;
+}
+
+.work-title {
+  margin-top: 0%;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Команда */
+
+.section.team {
+  background-color: var(--bg-btn-color);
+}
+
+.team-list {
+  margin: 0%;
+  list-style: none;
+}
+
+.team-title {
+  margin-top: 0%;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-subtitle {
+  margin-top: 0%;
+  margin-bottom: 30px;
+
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+
+.footer {
+  background-color: var(--bg-color-hero-foot);
+}
+
+.adress {
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.adress:hover,
+.adress:focus {
+  color: var(--accent-color);
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
+/* Сторінка сайту Портфоліо */
+
+.portfolio-list {
+  margin-top: 0%;
+  margin-bottom: 50px;
+
+  list-style: none;
+}
+
+.portfolio-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  margin: 0%;
+
+  font-size: 16px;
+  line-height: 1.8px;
+  letter-spacing: 0.03em;
+}
+
+.button {
+  background-color: var(--bg-btn-color);
+  color: var(--title-text-color);
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button.current {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* -------Приховування елемента------- */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
