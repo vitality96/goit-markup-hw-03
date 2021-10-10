@@ -16,18 +16,18 @@
 
 <!--Шапка-->
     <header>
-        <div class="container">
-        <nav>
+        <div class="container header">
+        <nav class="nav">
         <a href="./index.html" class="logo">Web<span class="logo-primary">Studio</span></a>
         <ul class="site-nav">
-            <li><a href="" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
         </nav>
         <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
+            <li class="item"><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
         </ul>
         </div>
     </header>
@@ -36,7 +36,9 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="btn">
             <button type="button" class="hero-btn">Заказать услугу</button>
+            </div>
         </section>
 
         <!--Особенности-->
@@ -44,25 +46,25 @@
             <div class="container">
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features-list">
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Внимание к деталям</h3>
                     <p class="features-text">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Пунктуальность</h3>
                     <p class="features-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Планирование</h3>
                     <p class="features-text">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
-                <li>
+                <li class="features-item">
                     <h3 class="features-title">Современные технологии</h3>
                     <p class="features-text">
                         Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -143,13 +145,13 @@
     <!--Футер-->
     <footer class="footer">
         <div class="container">
-        <a href="./index.html" class="logo">Web<span class="logo-secondary">Studio</span></a>
+        <a href="./index.html" class="logo margin">Web<span class="logo-secondary">Studio</span></a>
         <address class="adress">
             г. Киев, пр-т Леси Украинки, 26
         </address>
 
         <address>
-            <a href="mailto:info@example.com" class="footer-contact">info@example.com</a>
+            <a href="mailto:info@example.com" class="footer-contact">info@example.com</a> <br>
             <a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a>
         </address>
         </div>

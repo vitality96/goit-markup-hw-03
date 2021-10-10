@@ -43,6 +43,12 @@ body {
   text-decoration: none;
 }
 
+.logo.margin {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .logo-primary {
   color: #000000;
 }
@@ -53,11 +59,17 @@ body {
 
 /* ----------Header---------- */
 
+.container.header {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav {
+  display: flex;
   padding: 0%;
   margin: 0%;
-  list-style: none;
 
+  list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -65,10 +77,27 @@ body {
   text-decoration: none;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 
   text-decoration: none;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .item:first-child {
+  margin-left: 93px;
 }
 
 .site-nav .link:hover,
@@ -83,7 +112,8 @@ body {
 /* -------Контакти------- */
 
 .contacts {
-  margin: 0%;
+  display: flex;
+  margin-left: auto;
   padding: 0%;
   list-style: none;
 }
@@ -101,6 +131,10 @@ body {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+
+.contacts .item:last-child {
+  margin-left: 50px;
 }
 
 /* Герой */
@@ -137,6 +171,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
@@ -152,10 +191,16 @@ body {
 /* Особливості */
 
 .features-list {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
+
   list-style: none;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-title {
@@ -176,7 +221,7 @@ body {
 }
 
 .features-text {
-  margin: 0%;
+  margin: auto;
 
   font-size: 14px;
   line-height: 1.14;
@@ -255,6 +300,7 @@ body {
 }
 
 .adress {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
 
   font-style: normal;
@@ -269,6 +315,9 @@ body {
 }
 
 .footer-contact {
+  display: inline-block;
+  margin-bottom: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
@@ -276,6 +325,10 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-contact:last-child {
+  margin-bottom: 60px;
 }
 
 .footer-contact:hover,
