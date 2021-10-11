@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -231,8 +231,16 @@ body {
 /* Зайнятість */
 
 .work-list {
+  display: flex;
+  justify-content: center;
   margin: 0%;
+  padding: 0%;
+
   list-style: none;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work-title {
@@ -255,8 +263,15 @@ body {
 }
 
 .team-list {
+  display: flex;
   margin: 0%;
+  padding: 0%;
+
   list-style: none;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
@@ -279,6 +294,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -290,6 +306,7 @@ body {
 
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
