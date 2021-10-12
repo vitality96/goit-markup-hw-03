@@ -27,7 +27,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /*-----------Logo---------- */
@@ -62,6 +61,7 @@ body {
 .container.header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .site-nav {
@@ -109,11 +109,13 @@ body {
   color: var(--accent-color);
 }
 
-/* -------Контакти------- */
+/* -------Contacts------- */
 
 .contacts {
   display: flex;
   margin-left: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
   padding: 0%;
   list-style: none;
 }
@@ -137,7 +139,7 @@ body {
   margin-left: 50px;
 }
 
-/* Герой */
+/* -------Hero------- */
 
 .hero {
   background-color: var(--bg-color-hero-foot);
@@ -188,7 +190,7 @@ body {
   padding-bottom: 94px;
 }
 
-/* Особливості */
+/* -------Особливості------- */
 
 .features-list {
   display: flex;
@@ -221,6 +223,7 @@ body {
 }
 
 .features-text {
+  width: 270px;
   margin: auto;
 
   font-size: 14px;
@@ -228,7 +231,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Зайнятість */
+/* -------Зайнятість------- */
 
 .work-list {
   display: flex;
@@ -256,7 +259,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Команда */
+/* -------Команда------- */
 
 .section.team {
   background-color: var(--bg-btn-color);
@@ -310,7 +313,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Футер */
+/* -------Футер------- */
 
 .footer {
   background-color: var(--bg-color-hero-foot);
@@ -353,18 +356,49 @@ body {
   color: var(--accent-color);
 }
 
-/* Сторінка сайту Портфоліо */
+/*-------Сторінка сайту Портфоліо-------*/
 
-.portfolio-list {
+.portfolio-list.btn {
+  display: flex;
+  padding: 0%;
   margin-top: 0%;
   margin-bottom: 50px;
+  list-style: none;
+}
+
+.portfolio-list.space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0%;
+  margin: 0%;
 
   list-style: none;
+}
+
+.portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0%;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0%;
+}
+
+.portfolio-item-btn:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
 
   color: var(--title-text-color);
 
@@ -374,7 +408,11 @@ body {
 }
 
 .portfolio-text {
-  margin: 0%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0%;
+  margin-bottom: 20px;
+  margin-left: 24px;
 
   font-size: 16px;
   line-height: 1.8px;
@@ -392,6 +430,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
 
 .button.current {
