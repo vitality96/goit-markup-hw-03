@@ -15,7 +15,7 @@
 <body>
 
 <!--Шапка-->
-    <header>
+    <header class="header-line">
         <div class="container header">
         <nav class="nav">
         <a href="./index.html" class="logo">Web<span class="logo-primary">Studio</span></a>
@@ -35,14 +35,16 @@
     <!--Герой-->
     <main>
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="hero-title-box">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            </div>
             <div class="btn">
             <button type="button" class="hero-btn">Заказать услугу</button>
             </div>
         </section>
 
         <!--Особенности-->
-        <section class="section">
+        <section class="section features">
             <div class="container">
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features-list">
@@ -103,9 +105,11 @@
                     alt="Фотография дизайнера" 
                     width="270" 
                     height="260"
-                    />
+                    class="img-block"/>
+                    <div class="team-padding">
                     <h3 class="team-text">Игорь Демьяненко</h3>
                     <p class="team-subtitle">Designer</p>
+                    </div>
                </li>
                <li class="team-item">
                    <img 
@@ -113,9 +117,11 @@
                    alt="Фотография фронтенд-разработчика"
                    width="270"
                    height="260"
-                   />
+                   class="img-block"/>
+                   <div class="team-padding">
                    <h3 class="team-text">Ольга Репина</h3>
                    <p class="team-subtitle">Frontend Developer</p>
+                </div>
                </li>
                <li class="team-item">
                    <img 
@@ -123,9 +129,11 @@
                    alt="Фотография маркетолога"
                    width="270"
                    height="260"
-                   />
+                   class="img-block"/>
+                   <div class="team-padding">
                    <h3 class="team-text">Николай Тарасов</h3>
                    <p class="team-subtitle">Marketing</p>
+                </div>
                </li>
                <li class="team-item">
                    <img 
@@ -133,9 +141,11 @@
                    alt="Фотография дизайнера"
                    width="270"
                    height="260"
-                   />
+                   class="img-block"/>
+                   <div class="team-padding">
                    <h3 class="team-text">Михаил Ермаков</h3>
                    <p class="team-subtitle">UI Designer</p>
+                </div>
                </li>
             </ul>
             </div>
